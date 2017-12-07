@@ -15,8 +15,8 @@ var drk ={
             method: 'GET',
             mode:'cors'
         }
-        //let fetch = require('node-fetch');
-        let req= new Request(uri,options);
+        let fetch = require('node-fetch');
+        let req= new fetch.Request(uri,options);
         fetch(req)
             .then((response)=>{
                 if (response.ok){
